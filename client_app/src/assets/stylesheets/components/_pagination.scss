@@ -1,0 +1,55 @@
+.pagination {
+  justify-content: right;
+  .item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    &:first-of-type {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &.active {
+      color: #fff !important;
+      background-color: $primary-color;
+    }
+  }
+
+  .left {
+    font-style: normal;
+    &.angle {
+      &.double {
+        &::before {
+          content: "\00ab";
+        }
+      }
+    }
+    &.chevron {
+      &::before {
+        content: "\2039";
+      }
+    }
+  }
+
+  .right {
+    font-style: normal;
+
+    &.angle {
+      &.double {
+        &::before {
+          content: "\00bb";
+        }
+      }
+    }
+    &.chevron {
+      &::before {
+        content: "\203A";
+      }
+    }
+  }
+}

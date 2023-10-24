@@ -1,0 +1,4 @@
+module.exports = {
+  ENTITY_NOT_FOUND: "ENTITY_NOT_FOUND",
+  RECORD_EXPIRED: "RECORD_EXPIRED",
+};

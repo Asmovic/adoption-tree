@@ -1,0 +1,23 @@
+.vuetable {
+  &-detail-row {
+    >td {
+      padding: 0;
+    }
+
+    .detail-row {
+      max-height: 600px;
+      overflow-y: auto;
+      transition: all .3s ease-in-out;
+      padding: 10px;
+    }
+
+    &.row-visible-enter-active {
+      .detail-row {
+        height: 0;
+        max-height: 0px;
+        opacity: 0;
+      }
+    }
+  }
+
+}

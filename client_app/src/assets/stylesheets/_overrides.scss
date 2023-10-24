@@ -1,0 +1,382 @@
+.form__side-image {
+  width: 165px;
+}
+@media (max-width:629px) {
+  .form__side-image {
+    display: none;
+  }
+}
+.error-msg {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  color: #ff3232;
+  font-size: 13px;
+}
+
+#app {
+  position: relative;
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 8%;
+  }
+}
+
+.global-form {
+  flex: 1;
+  padding-left: 24px;
+
+  .form-header {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.right-section {
+  .adopteradvert {
+    flex: 2;
+    margin: 0px;
+    background: #69be0f;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.global-alert {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  max-height: 450px;
+  z-index: 99999;
+  box-shadow: 0 5px 20px 3px #00000021;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  transition: all 0.45s ease-in-out;
+  transform: translateY(-500px);
+  overflow-wrap: anywhere;
+
+  &.show {
+    transform: translateY(0px);
+  }
+}
+
+.dashboardballs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  margin: 20px 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  background: transparent linear-gradient(320deg, #f8f8f8 0%, #f5fffd 100%) 0% 0% no-repeat padding-box;
+  border: 1px solid #70c11a;
+  color: #000;
+  font-weight: bold;
+  font-size: 2em;
+  box-shadow: 0px 0px 0px 8px #e7ebea;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    font-size: 2.5em;
+    border: 2px solid #70c11a;
+    opacity: 1;
+  }
+}
+
+.pages__parent {
+  max-width: 100%;
+  padding-right: 15px;
+}
+
+.__cov-progress {
+  background-color: $primary-color !important;
+  top: auto !important;
+  bottom: 0;
+}
+
+@media screen and (max-width: $tablet-screen) {
+  .featured-testimonials {
+    .testimonials {
+      padding-top: 40px !important;
+
+      .testimonial {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .health-plan-benefits {
+    .content {
+      width: 100% !important;
+    }
+  }
+
+  .howto-sponsor {
+    .steps {
+      .icon {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  .jumbo-content-container {
+    .state-logo {
+      max-width: 80px !important;
+    }
+    .main-heading {
+      font-size: 36px !important;
+      line-height: 1.2 !important;
+    }
+
+    .subheading {
+      font-size: 24px !important;
+    }
+  }
+
+  .partner-logos {
+    margin-top: 20px !important;
+  }
+
+  .posts-photo-gallery {
+    margin-top: 80px !important;
+
+    .thumbnails {
+      grid-template-columns: repeat(4, 60px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+  body {
+    padding-top: 56px;
+  }
+
+  main {
+    .pages__parent {
+      .jumbotron {
+        padding: 30px 0px;
+      }
+    }
+  }
+
+  h2.fw-md {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .featured-testimonials {
+    .testimonials {
+      // padding-top: 40px !important;
+
+      .testimonial {
+        flex-direction: column;
+        .img-container {
+          margin-right: 0 !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 120px !important;
+            border-width: 8px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .jumbo-content-container {
+    padding-top: 16px !important;
+
+    .state-logo {
+      max-width: 40px !important;
+    }
+
+    .links {
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      justify-content: center;
+
+      button, a {
+        font-size: 14px;
+        height: auto;
+        padding: 4px 8px;
+        margin-right: 0;
+      }
+    }
+
+    .main-heading {
+      font-size: 24px !important;
+      line-height: 1.4 !important;
+    }
+
+    .subheading {
+      font-size: 16px !important;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .howto-sponsor {
+    .steps {
+      grid-template-columns: repeat(2, 1fr) !important;
+      padding-top: 20px !important;
+
+      .step {
+        margin-bottom: 20px;
+      }
+
+      .icon {
+        border-width: 6px;
+        width: 100px;
+        height: 100px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin: 0 !important;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .health-plan-benefits, .featured-testimonials {
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 16px !important;
+    }
+  }
+
+  .featured-testimonials {
+    margin-top: 60px;
+    .testimonials {
+      padding-top: 20px !important;
+
+      .testimonial {
+        margin-bottom: 20px;
+
+        .img-container {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .recent-posts {
+    header {
+      margin-bottom: 16px;
+    }
+  }
+
+  
+
+  .statistics { 
+    .points {
+      grid-template-columns: repeat(2,1fr) !important;
+      row-gap: 20px !important;
+      margin-top: 30px !important;
+
+      .icon-text {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+
+      .content h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .posts-photo-gallery {
+    margin-top: 80px !important;
+
+    .container.grid {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-right: 20px !important;
+      font-size: 24px !important;
+      line-height: 1.24 !important;
+    }
+
+    .thumbnails {
+      display: flex !important;
+      flex-wrap: wrap;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  // Top slider
+  .carousel-item {
+    img {
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  // State review
+  .state-review {
+    .description {
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  .site-footer {
+    padding: 20px 0 !important;
+    .container {
+      flex-direction: column;
+
+      .links {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    .powered-by {
+      h4 {
+        margin-bottom: 10px !important;
+      }
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

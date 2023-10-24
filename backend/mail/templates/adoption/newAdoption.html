@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AdoptionTree - New Adoption</title>
+</head>
+
+<body>
+    <h3>Dear <%= user.firstName %>,</h3>
+
+    <p>
+        Thank you for adopting <%= count %> persons on the Imo State Adoption Tree platform.
+    </p>
+    <p>
+        Find below further details of your Adoption
+    </p>
+
+    <p>
+        <strong>Adoption Type:</strong> <%= type %> <br>
+        <strong>No. of Adoptees:</strong> <%= count %> <br>
+        <strong>Total Amount:</strong> <%= amount %> <br>
+        <strong>Start Date:</strong> <%= startDate %> <br>
+        <strong>End Date:</strong> <%= endDate %> <br>
+    </p>
+
+    <p>
+        Regards, <br>
+        <%= platform =%> Adoption Tree
+    </p>
+</body>
+
+</html>

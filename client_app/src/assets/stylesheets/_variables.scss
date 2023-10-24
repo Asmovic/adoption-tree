@@ -1,0 +1,34 @@
+$app-header-height: 80px;
+//Imo
+$primary-color: #6abe0f;
+$primary-color-darker: #488315;
+$primary-color-light: #7fe212;
+$primary-color-lighter: #8ffb1a;
+
+//Anambra
+$primary-color: #F8CE2B;
+$primary-color-darker: #FF9800;
+$primary-color-light: #ffe684;
+$primary-color-lighter: #fbe8a1;
+
+
+$base-duration: 0.3s;
+$base-timing: ease-in;
+$base-font-size: 16px;
+$base-heading-font-size: 56px;
+$color-grey: #eaeaea;
+$color-grey--light: #ededed;
+$base-text-color: #4b4b4b;
+$button-text-color: inherit;
+$button-text-color-hover: inherit;
+
+// Global Media Query Sizes
+$tiny-screen: 360px;
+$small-screen: 375px;
+$medium-screen: 600px;
+$tablet-screen: 768px;
+$large-screen: 900px;
+$tablet-landscape: 1024px;
+$extra-large-screen: 1200px;
+$retina-screen: 1440px;
+$ultra-screen: 1600px;

@@ -1,0 +1,129 @@
+body {
+  font-family: "Apercu Pro", Helvetica, sans-serif;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+.anchor-link {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+
+  &[disabled],
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
+
+.router-link-exact-active {
+  &:not(.button) {
+    color: $primary-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: initial;
+}
+
+h1 {
+  font-size: $base-heading-font-size;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: $base-heading-font-size - 20px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: $base-heading-font-size - 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: $base-heading-font-size - 40px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: $base-heading-font-size - 44px;
+  line-height: 24px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: "Raleway";
+  margin-top: .85rem;
+  width: 100%;
+}
+
+.text {
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--light {
+    font-family: "Apercu Pro Light", sans-serif;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--primary {
+    color: $primary-color;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--no-decoration {
+    text-decoration: none !important;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.light--text {
+  font-weight: lighter;
+  color: #7e7674;
+}
+
+.fw-md {
+  // font-weight: 500;
+  font-family: "Raleway Medium", sans-serif;
+}
+
+.fw-sb {
+  font-weight: 600;
+}

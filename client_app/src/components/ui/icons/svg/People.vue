@@ -1,0 +1,41 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="105.211"
+    height="59.289"
+    viewBox="0 0 105.211 59.289"
+  >
+    <g transform="translate(-39.755 -52.673)">
+      <path
+        class="a"
+        d="M69.231,415.074a25.786,25.786,0,0,1,.607-5.566,17.851,17.851,0,0,1-19.966-1.332,18.384,18.384,0,0,0-7.444,14.789v10.784h26.8V415.074Z"
+        transform="translate(-2.672 -321.787)"
+      />
+      <path
+        class="a"
+        d="M378.255,408.176a17.851,17.851,0,0,1-19.966,1.332,25.8,25.8,0,0,1,.606,5.566v18.675h26.8V422.965A18.383,18.383,0,0,0,378.255,408.176Z"
+        transform="translate(-240.733 -321.787)"
+      />
+      <circle class="a" cx="10.521" cy="10.521" r="10.521" transform="translate(47.645 61.723)" />
+      <circle class="a" cx="10.521" cy="10.521" r="10.521" transform="translate(116.032 61.723)" />
+      <path
+        class="a"
+        d="M210.629,376.14a17.854,17.854,0,0,1-21.936,0,18.384,18.384,0,0,0-7.444,14.789V409.6h36.824V390.929a18.384,18.384,0,0,0-7.444-14.789Z"
+        transform="translate(-107.301 -297.642)"
+      />
+      <circle
+        class="a"
+        cx="10.521"
+        cy="10.521"
+        r="10.521"
+        transform="translate(80.646 55.24) rotate(-7.004)"
+      />
+    </g>
+  </svg>
+</template>
+
+<style lang="scss" scoped>
+.a {
+  fill: $primary-color;
+}
+</style>

@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding-top: $app-header-height;
+  overflow-wrap: break-word;
+  color: $base-text-color;
+}
+
+#app {
+  flex: 1;
+}
+
+// Layout modifiers
+.i-block {
+  display: inline-block !important;
+}
+
+.h-auto {
+  height: auto !important;
+}

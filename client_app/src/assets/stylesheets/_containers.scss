@@ -1,0 +1,31 @@
+.full-width {
+  width: 100% !important;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.container {
+  width: 100%;
+
+  @media screen and (min-width: $tiny-screen) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    max-width: calc(100% - 40px);
+  }
+
+  @media screen and (min-width: $tablet-screen) {
+    max-width: calc(100% - 80px);
+  }
+
+  @media screen and (min-width: $retina-screen - 100px) {
+    max-width: calc(100% - 160px);
+  }
+
+  @media screen and (min-width: $ultra-screen) {
+    max-width: $retina-screen;
+  }
+}
